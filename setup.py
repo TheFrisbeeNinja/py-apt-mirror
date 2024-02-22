@@ -26,7 +26,7 @@ with open("VERSION", "r") as versionFile:
 
 with open(os.path.join(PACKAGE_NAME, "__version__.py"), "w") as versionFile:
     versionFile.write('"""Auto-generated version file."""\n')
-    versionFile.write('VERSION = "{}"'.format(version))
+    versionFile.write('VERSION = "{}"\n'.format(version))
 
 setup(
     name=PACKAGE_NAME,
